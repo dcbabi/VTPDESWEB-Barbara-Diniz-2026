@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.cartao {
+    padding: 14px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+div {
+    background-color: rgb(177, 177, 177);
+    color: rgb(41, 41, 41);
+}
+
+.alerta {
+    background-color:  lightgoldenrodyellow;
+    color: rgb(102, 100, 0);
+}
+
+#critico {
+    background-color: rgb(139, 0, 0);
+    color: white;
+}

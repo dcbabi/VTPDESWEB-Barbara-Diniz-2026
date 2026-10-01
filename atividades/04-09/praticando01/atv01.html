@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Praticando 1 - Cores e background-colors</title>
+
+    <style>
+        body{
+            background-color: rgb(185, 185, 185);
+        }
+        nav, main{
+            background-color: gray;
+        }
+        .bg-gray{
+            background-color: rgb(95, 95, 95);
+        }
+        
+        .red-container{
+            background-color: rgb(255, 201, 201);
+            border: 3px solid rgb(95, 28, 28);
+            color: rgb(105, 9, 9);
+        }
+        .red-marker{
+            background: red;
+        }
+
+        .green-container{
+            background-color: rgb(184, 255, 175);
+            border: 3px solid rgb(44, 114, 30);
+            color: rgb(24, 88, 18);
+        }
+        .green-marker{
+            background: green;
+        }
+
+        .blue-container{
+            background-color: rgb(201, 231, 255);
+            border: 3px solid rgb(0, 3, 168);
+            color: rgb(23, 30, 95);
+        }        
+        .blue-marker{
+            background: blue;
+        }
+
+        .yellow-container{
+            background-color: rgb(255, 242, 183);
+            border: 3px solid rgb(145, 106, 2);
+            color: rgb(201, 171, 0);
+        }    
+        .yellow-marker{
+            background: yellow;
+        }
+
+        .orange-container{
+            background-color: rgb(255, 156, 117);
+            border: 3px solid rgb(109, 25, 0);
+            color: rgb(146, 58, 0);
+        }         
+        .orange-marker{
+            background: rgb(255, 107, 53);
+        }           
+
+
+    </style>
+
+    
+</head>
+
+<body>
+    <!--
+        PRATICANDO 1 - Cores e background-colors
+        =========================================
+
+        1. Utilize CSS EXTERNO
+           NÃO é permitido usar CSS inline! Você deverá mostrar o código
+           fonte na validação da atividade.
+
+        2. Para cada seção (vermelho, verde, azul, amarelo, laranja)
+           escolha um tom claro e um escuro
+             - a cor de fundo da seção deverá ser o tom claro (background-color);
+             - a cor da borda e da fonte deverá ser o tom mais escuro.
+
+        3. Os trechos de texto marcados com <span> devem ficar em uma
+           cor diferente do restante do parágrafo.
+
+        4. O menu de navegação deve funcionar como âncoras: cada link
+           precisa levar até a seção correspondente da página.
+
+        Chame o professor quando terminar para mostrar o resultado.
+    -->
+
+    <header>
+        <h1>Praticando 1 - Cores e <i>background-colors</i></h1>
+    </header>
+
+    <nav>
+        <h3>Menu para navegação</h3>
+        <ul>
+            <li>
+                <a href="#1">Bloco <span class="red-marker">vermelho</span></a>
+            </li>
+            <li>
+                <a href="#2">Bloco <span class="green-marker">verde</span></a>
+            </li>
+            <li>
+                <a href="#3">Bloco <span class="blue-marker">azul</span></a>
+            </li>
+            <li>
+                <a href="#4">Bloco <span class="yellow-marker">amarelo</span></a>
+            </li>
+            <li>
+                <a href="#5">Bloco <span class="orange-marker">laranja</span></a>
+            </li>
+        </ul>
+        <br>
+    </nav>
+
+    <main>
+        <h2>Este é o bloco principal da página</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem modi
+            assumenda necessitatibus consequatur cum ipsum pariatur at? Ducimus
+            hic explicabo tenetur deleniti debitis aut deserunt consequuntur
+            animi! Laborum, minima odio! Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Iure, maxime nostrum culpa debitis laudantium
+            facere, unde suscipit minus officiis omnis molestias ullam corporis
+            quae minima incidunt perferendis ipsum qui alias?
+        </p>
+
+        <section id="1" class="red-container">
+            <h4>Bloco <span>vermelho</span></h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="red-marker">Quidem modi
+                    assumenda necessitatibus consequatur cum ipsum pariatur at? Ducimus
+                    hic explicabo tenetur deleniti debitis aut deserunt consequuntur
+                    animi! </span>Laborum, minima odio! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Iure, maxime nostrum culpa debitis
+                laudantium facere, unde suscipit minus
+                officiis omnis molestias ullam corporis quae minima incidunt
+                perferendis ipsum qui alias?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem modi
+                assumenda necessitatibus consequatur cum ipsum pariatur at? Ducimus
+                hic <span class="red-marker">explicabo tenetur deleniti debitis aut
+                    deserunt consequuntur animi! Laborum, minima odio! Lorem ipsum dolor
+                    sit amet consectetur adipisicing elit. </span>Iure, maxime nostrum culpa
+                debitis laudantium facere, unde suscipit minus officiis omnis
+                molestias ullam corporis quae minima incidunt perferendis ipsum qui
+                alias?
+            </p>
+        </section>
+        <br>
+
+        <section id="2" class="green-container">
+            <h4>Bloco <span>verde</span></h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem modi
+                assumenda necessitatibus consequatur cum ipsum pariatur at? Ducimus
+                hic explicabo tenetur deleniti debitis aut deserunt consequuntur
+                animi! Laborum, minima odio! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Iure, maxime nostrum culpa debitis
+                <span class="green-marker">laudantium facere, unde suscipit minus
+                    officiis omnis molestias ullam corporis quae minima incidunt
+                    perferendis ipsum qui alias?</span>
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem modi
+                assumenda necessitatibus consequatur cum ipsum pariatur at? Ducimus
+                hic <span class="green-marker">explicabo tenetur deleniti</span> debitis aut
+                deserunt consequuntur animi! Laborum, minima odio! Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Iure, maxime nostrum culpa
+                debitis laudantium facere, unde suscipit minus officiis omnis
+                molestias ullam corporis quae minima incidunt perferendis ipsum qui
+                alias?
+            </p>
+        </section>
+        <br>
+
+        <section id="3" class="blue-container">
+            <h4>Bloco <span>azul</span></h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem modi
+                assumenda necessitatibus consequatur cum ipsum pariatur at? Ducimus
+                <span class="blue-marker">hic explicabo tenetur deleniti debitis aut deserunt consequuntur
+                animi! Laborum, minima odio! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Iure, maxime nostrum culpa debitis
+                laudantium facere</span>, unde suscipit minus
+                officiis omnis molestias ullam corporis quae minima incidunt
+                perferendis ipsum qui alias?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem modi
+                assumenda necessitatibus consequatur cum ipsum pariatur at? Ducimus
+                hic <span class="blue-marker">explicabo tenetur deleniti debitis aut
+                deserunt consequuntur animi! Laborum, minima odio! Lorem ipsum dolor</span>
+                sit amet consectetur adipisicing elit. Iure, maxime nostrum culpa
+                debitis laudantium facere, unde suscipit minus officiis omnis
+                molestias ullam corporis quae minima incidunt perferendis ipsum qui
+                alias?
+            </p>
+        </section>
+        <br>
+
+        <section id="4" class="yellow-container">
+            <h4>Bloco <span>amarelo</span></h4>
+            <p>
+                <span class="yellow-marker">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem modi
+                assumenda necessitatibus consequatur cum ipsum pariatur at? Ducimus
+                hic explicabo tenetur deleniti debitis aut deserunt consequuntur</span>
+                animi! Laborum, minima odio! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Iure, maxime nostrum culpa debitis
+                laudantium facere, unde suscipit minus
+                officiis omnis molestias ullam corporis quae minima incidunt
+                perferendis ipsum qui alias?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem modi
+                assumenda necessitatibus consequatur cum ipsum pariatur at? Ducimus
+                hic <span class="yellow-marker">explicabo tenetur deleniti debitis aut
+                deserunt consequuntur animi! Laborum, minima odio! Lorem ipsum dolor
+                sit amet consectetur adipisicing elit.</span> Iure, maxime nostrum culpa
+                debitis laudantium facere, unde suscipit minus officiis omnis
+                molestias ullam corporis quae minima incidunt perferendis ipsum qui
+                alias?
+            </p>
+        </section>
+        <br>
+
+        <section id="5" class="orange-container">
+            <h4>Bloco <span>laranja</span></h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem modi
+                assumenda necessitatibus consequatur cum ipsum pariatur at? Ducimus
+                hic explicabo tenetur deleniti debitis aut deserunt consequuntur
+                animi! Laborum, minima odio! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Iure, maxime nostrum culpa debitis
+                <span class="orange-marker">laudantium facere, unde suscipit minus
+                officiis omnis molestias ullam corporis quae minima incidunt</span>
+                perferendis ipsum qui alias?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet <span class="orange-marker">consectetur adipisicing elit. Quidem modi
+                assumenda necessitatibus consequatur cum ipsum pariatur at? Ducimus
+                hic explicabo tenetur deleniti</span> debitis aut
+                deserunt consequuntur animi! Laborum, minima odio! Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Iure, maxime nostrum culpa
+                debitis laudantium facere, unde suscipit minus officiis omnis
+                molestias ullam corporis quae minima incidunt perferendis ipsum qui
+                alias?
+            </p>
+        </section>
+        <br>
+    </main>
+</body>
+
+</html>

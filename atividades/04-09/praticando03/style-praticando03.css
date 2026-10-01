@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(173, 216, 230);
+    background-image: url(img/gatto.png);
+    background-position:100% 100%;
+    background-repeat: no-repeat;
+    min-height: 90vh;
+}
+
+.section1{
+    background-color: rgb(255, 155, 155);
+}
+
+.section2{
+    color:rgb(255, 0, 98);
+    background-color: rgb(69, 0, 133);
+    background-image: url(img/gatito.png);
+    background-repeat: repeat;
+}
+
+.section3{
+    background-color: rgba(0, 143, 64, 0.4);
+}

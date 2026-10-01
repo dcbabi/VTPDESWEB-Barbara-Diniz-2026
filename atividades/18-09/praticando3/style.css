@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap');
+
+html{
+    font-family: 'Emilys Candy', sans-serif;
+    background-color: rgb(116, 17, 182);
+    text-align: justify;
+    font-weight: bold;
+    margin:0;
+}
+body{
+    margin: 0 3rem 0 3rem;
+    background-color: rgba(186, 235, 123, 0.774);
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+p, h1{
+    margin-left:1%;
+}
+
+.img-1{
+    float:right;
+    margin: 0rem 2rem 2rem 2rem;
+    width: 25%;
+}
+.img-2{
+    float:left;
+    margin: 0rem 2rem 2rem 0rem;
+    width: 25%;
+}
+.img-3{
+    float:right;
+    margin: 0rem 2rem 2rem 2rem;
+    width: 20%;
+}
+
+p.clear{
+    clear: left;
+}

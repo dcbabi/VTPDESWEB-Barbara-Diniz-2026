@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+html{
+    padding-left: 15%;
+    padding-right: 15%;
+    font-family: "Nunito", Arial, sans-serif;
+}
+
+.item1{
+    grid-area: header;
+    background-color: rgb(43, 15, 8);
+}
+.item2{
+    grid-area: nav;
+    background-color: antiquewhite;
+}
+.item3{
+    grid-area: main;
+}
+.item4{
+    grid-area: aside;
+
+}
+.item5{
+    grid-area: footer;
+    background-color: rgb(43, 15, 8);
+}
+
+.container-main{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr) 0.7fr;
+    grid-template-areas: 
+    'header header header header header header'
+    'nav nav nav nav nav nav'
+    'main main main main aside aside'
+    'main main main main aside aside'
+    'footer footer footer footer footer footer'; 
+
+}
+
+.container-intern{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 3%; 
+    margin: 3%; 
+}
+.card-intern{
+    grid-column: span 2;
+    border: 2px solid rgb(21, 44, 20);  
+    border-radius: 5%;
+    padding: 1%;
+    background-color: rgb(215, 255, 222);
+}
+.cards{
+    border: 1px solid rgb(170, 170, 170);
+    border-radius: 5%;
+    padding: 1%;
+}
+
+.flexbox-column{
+    display: flex;
+    flex-direction: column;
+/*    border: 1px solid violet;*/
+    text-align: center;
+}
+.flexbox-row{
+    display: flex;
+    flex-direction: row;
+/*    border: 1px solid rgb(124, 12, 199); */
+    text-align: center;
+    gap: 2%;
+}
+
+
+.flexbox-header{
+    justify-content: flex-start;
+    margin-bottom: 0px;
+}
+#header-end{
+    padding: 1% 1.5%;
+    align-self: center;;
+    margin-left: auto;
+    margin-right: 3%;
+    border: 2px solid rgb(255, 245, 245);
+    border-radius: 5%;
+    color: rgb(255, 245, 245);
+    font-weight: bold;    
+}
+#header-end > p{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+.flexbox-nav{
+    justify-content: space-evenly;
+    border-bottom: 2px solid rgb(21, 44, 20);
+    font-weight: bold;
+    color: rgb(65, 41, 41);
+}
+
+
+.flexbox-main{
+    padding-bottom: 2%;
+}
+.flexbox-main > h2{
+    margin-left: 3%;
+}
+
+.flexbox-aside{
+    padding: 2% 5% 0% 7%;
+    border-left: 2px solid rgb(21, 44, 20);
+}
+
+/* # # # 
+ para essa seção dos blocos do flexbox-footer, pesquisei a melhor maneira
+ de conseguir separar cada seção para que ficassem alinhadas à
+ direita, sem ultrapassar os limites do flexbox
+ dessa maneira, descobri que a maneira mais pratica de fazer isso,
+ ainda utilizando o flexbox, seria definir um espaçamento
+ para cada bloco utilizando 'flex'
+*/
+
+/* flexbox footer geral/generico*/
+.flexbox-footer{
+    width: 100%;
+    justify-content: flex-start;
+}
+.flexbox-footer > section {
+    flex: 1; /* aqui, é definido que cada bloco - endereço, contato e redes */
+    text-align: left; /* sociais terão a mesma largura pé-definida -> 1 */
+    color: rgb(255, 245, 245);
+    padding-left: 2%;
+    line-height: 80%;
+}
+
+/* visualização da divisão
+header, nav, main, aside, footer{
+    border: 1px solid black;
+}
+*/
+
+/* ####################################################### 
+    estilizações da pagina em si        ########################## */
+
+h1{
+    margin-left: 1%;
+    color: rgb(255, 245, 245);
+}
+
+h3, h4{
+    text-indent: 3%;
+}
+
+h5{
+    text-align: center;
+    color: rgb(255, 245, 245);
+}
+
+#header-end:hover{
+    color:rgb(43, 15, 8);
+    background-color: rgb(255, 245, 245);
+}
+
+.nav-item{
+    padding: 0.7% 1%;
+}
+.nav-item:hover{
+    border-radius: 10%;
+    background-color: rgb(21, 44, 20); 
+    color: rgb(255, 245, 245);
+}
+
+.cards:hover{
+    background-color: rgb(188, 248, 198);
+    border: 2.5px solid rgb(21, 44, 20);  
+    padding: 0.3%;
+}
+
+#icone{
+    font-size: 275%;
+    margin: 1%;
+}
+#preco{
+    font-weight: bold;
+    color: rgb(0, 78, 4);
+    margin: 1%;
+}
+#titulo{
+    font-weight: bold;
+    margin: 1%;    
+}
+#desc{
+    text-wrap: wrap;
+}
+
+
+.end, .cont, .redes{
+    color: rgb(83, 207, 103);
+    font-weight: bold;
+    padding-bottom: 3%;
+}
+
+.border-after{
+    position: relative;
+    padding-bottom: 1%;
+}
+.border-after::after{
+    content:'';
+    position: absolute;
+    bottom: 0;
+    left: 3%;
+    width: 94%;
+    height: 1px;
+    background-color: rgb(255, 245, 245);
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parte 4 do Praticando 5</title>
+
+    <style>
+        .heading{
+            color:aliceblue;
+            background-color: black;
+        }
+
+        .tartaruga{
+            border: 3px solid rgb(0, 139, 182);
+            background-color: rgb(168, 235, 252);
+        }
+        .tartaruga:hover{
+            outline: 3px dotted rgb(0, 55, 71);
+            border: 3px solid rgb(168, 235, 252);
+            background-color: rgb(69, 145, 168);            
+        }
+        .img-tar{
+            width:350px;            
+            border-color: rgb(0, 139, 182);
+            border-style: dotted;
+        }   
+
+        .onca{
+            border: 3px solid rgb(129, 58, 0);
+            background-color: rgb(252, 215, 166);
+        }
+        .onca:hover{
+            outline: 3px dotted rgb(53, 26, 3);
+            border: 3px solid rgb(252, 215, 166);
+            background-color: rgb(99, 61, 30);          
+        }        
+        .img-onca{
+            width:350px;              
+            border-color: rgb(129, 58, 0);
+            border-style: dotted;
+        }  
+
+        .mico{
+            border: 3px solid rgb(0, 148, 62);
+            background-color: rgb(196, 255, 185);
+        }
+        .mico:hover{
+            outline: 3px dotted rgb(0, 39, 16);
+            border: 3px solid rgb(196, 255, 185);
+            background-color: rgb(164, 255, 59);     
+        }        
+        .img-mico{
+            width:350px;  
+            border-color: rgb(0, 148, 62);
+            border-style: dotted;
+        }   
+        
+        figurecaption{
+            color:rgba(122, 91, 43, 0.555)
+        }
+        footer{
+            background-color: rgb(188, 189, 190);
+        }
+
+    </style>
+</head>
+<body>
+    <section class="heading">
+        <h1>Parte 04 - Praticando Bordas, Outline e :hover</h1>
+        <p>Passe o mouse sobre cada caixa para ver o efeito de :hover</p>
+    </section>
+    <section>
+        <div class="tartaruga">
+            <h2>Tartaruga marinha <em>(Cheloniidae)</em></h2>   
+            <p>Tartaruga-marinha <em>(Cheloniidae)</em> é a família da ordem das tartarugas que inclui as espécies que habitam mares tropicais e subtropicais em todo o mundo. O grupo é constituído por seis gêneros e sete espécies, todas elas ameaçadas de extinção.</p> 
+            
+            <figure>
+                <img class="img-tar" src="/28-08/praticando-05/imgs/tartaruga.avif" alt="imagem de uma tartatura marinha no mar">
+                <br>
+                <figurecaption>Legenda: Tartaruga-marinha <em>(Cheloniidae)</em></figurecaption>
+            </figure>    
+            <p>A sobrevivência das tartarugas-marinhas continua em risco devido a muitos anos de caça intensiva pela sua carapaça, carne (utilizada para sopa) e gordura. Atualmente a caça está controlada, mas estes animais continuam ameaçados pelas redes de pesca que matam cerca de 40 000 exemplares por ano. Outra das maiores ameaças é o desenvolvimento costeiro nas áreas de nidificação, que impede as fêmeas de pôr os ovos e impossibilita a sua reprodução.</p>
+            <p>A maioria das espécies são migratórias e vagueiam pelos oceanos, orientando-se com a ajuda do campo magnético terrestre.</p>
+        </div>
+        <br>
+        <div class="onca">
+            <h2>Onça-Pintada <em>(Panthera onca)</em></h2>   
+            <p>A onça-pintada <em>(Panthera onca)</em> é o maior felino das Américas e o terceiro maior do mundo, atrás apenas do leão e do tigre. Vive em florestas, pantanais e cerrados, do México até o norte da Argentina.</p> 
+            
+            <figure>
+                <img class="img-onca" src="/28-08/praticando-05/imgs/onca.jpg" alt="imagem de uma onca pintada">
+                <br>
+                <figurecaption>Legenda: Onça-pintada <em>(Panthera onca)</em></figurecaption>
+            </figure>    
+            <p>É um predador de topo de cadeia alimentar: caça desde capivaras e veados até jacarés, usando uma mordida extremamente forte, capaz de perfurar o crânio de suas presas.</p>
+            <p>Está classificada como espécie quase ameaçada, principalmente por causa da destruição de seu habitat natural e de conflitos com produtores rurais.</p>
+        </div>   
+        <br>
+        <div class="mico">
+            <h2>Mico-leão-dourado <em>(Leontopithecus rosalia)</em></h2>   
+            <p>O mico-leão-dourado<em>(Leontopithecus rosalia)</em> é um pequeno primata encontrado apenas na Mata Atlântica do Rio de Janeiro, reconhecido pela pelagem alaranjada e brilhante que lembra a juba de um leão.</p> 
+            
+            <figure>
+                <img class="img-mico" src="/28-08/praticando-05/imgs/mico.avif" alt="imagem de um mico leao dourado">
+                <br>
+                <figurecaption>Legenda: Mico-leão-dourado <em>(Leontopithecus rosalia)</em></figurecaption>
+            </figure>    
+            <p>Vive em pequenos grupos familiares e se alimenta principalmente de frutas, insetos e pequenos vertebrados.</p>
+            <p>Foi um dos primeiros símbolos de conservação da fauna brasileira: chegou a ter menos de 200 indivíduos na natureza na década de 1970, e hoje é considerado um símbolo de sucesso em programas de reintrodução.</p>
+        </div>              
+    </section>
+    <footer>
+        <p>© 2026 IFSP Votuporanga — Desenvolvimento Web 1</p>
+    </footer>
+</body>
+</html>

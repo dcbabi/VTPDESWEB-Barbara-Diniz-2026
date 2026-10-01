@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parte 3 do Praticando 5</title>
+
+    <style>
+        .palavra-azul{
+            color:blue;
+        }
+        .palavra-verm{
+            color: red;
+        }
+        .palavra-ver{
+            color: rgb(30, 179, 0);
+        }
+        .bg-amarelo{
+            background-color: rgb(255, 255, 88);
+        }
+        .bg-azul{
+            background-color: rgb(138, 226, 255);
+        }
+        .div-um{
+            background-color: rgb(255, 255, 88);
+            border: 3px solid red;
+        }
+        .div-dois{
+            background-color: rgb(138, 226, 255);
+            border: 3px solid red;
+        }
+        .entidades{
+            background-color: rgb(179, 176, 176);
+            font-family:'Courier New', Courier, monospace;
+        }
+
+        .inline{
+            border: 3px solid rgb(6, 63, 187);
+            background-color: rgb(255, 249, 241);
+        }
+        .block{
+            border: 3px solid rgb(255, 203, 31);
+            background-color: rgb(255, 245, 232);
+            margin-bottom: 12px;
+        }
+        .block-kid{
+            display: block;
+            margin-left: 40px;
+            width: calc(100% - 80px);
+        }
+
+        footer{
+            background-color: rgb(177, 177, 177);
+        }
+    </style>
+
+</head>
+<body>
+    <section class="bg-azul">
+        <h1>Parte 3 - Seções, Container e Bordas com CSS</h1>
+        <p>Acima, exemplo de um cabeçalho feito utilizando &lt;header&gt;</p>
+    </section>
+
+    <section>
+        <h2>Seção 1</h2>
+        <p>Este é um exemplo de texto com uma palavra <span class="palavra-azul">azul</span>, uma palavra <span class="palavra-ver">verde</span> e uma palavra <span class="palavra-verm">vermelha</span>.</p>
+    
+        <div class="div-um">
+            <p>Caixa feita com 'div' dentro da section/seção</p>
+        </div>
+        <div class="div-dois">
+            <p>Segundo a “História da Web”, a primeira página HTML foi publicada em 1991 — mais de 30 anos atrás. Hoje, a linguagem é usada em bilhões de páginas ao redor do mundo.</p>
+            <p>Curiosidade: o símbolo de grau (°) e o de multiplicação (×) também são entidades, como em <b>25°C</b> ou <b>3 × 4</b>.</p>
+        </div>
+    </section>    
+
+    <section>
+        <h2>Seção 2</h2>
+        <p>Este outro exemplo de texto, agora há mais palavras em <span class="palavra-ver">verde</span>, algumas em  <span class="palavra-azul">azul</span> e só uma em <span class="palavra-verm">vermelho</span>.</p>
+        <div class="div-dois">
+            <p>Todo rodapé de site sério tem um símbolo de copyright (©) e, às vezes, até de marca registrada (®) ou marca comercial (™). Setas também são comuns em menus: ← voltar → avançar.</p>
+            <p>E frações? ½ xícara de açúcar, ¼ de hora — tudo isso são entidades HTML!</p>
+        </div>        
+    </section>
+
+    <section>
+        <h2>Seção 3 — Por que entidades existem de verdade</h2>
+        <p>Além dos símbolos "bonitinhos", entidades resolvem um problema real: como mostrar um sinal de menor <span class="entidades">(&amp;lt;)</span> ou maior <span class="entidades">(&amp;gt;)</span> na tela sem o navegador achar que é o início de uma tag?</p>    
+        <div class="div-um">
+            <p>Se eu quiser que a tag <span class="entidades">&lt;p&gt;</span> apareça como texto normal (sem virar um parágrafo de verdade), preciso escrever <span class="entidades">&amp;lt;p&amp;gt;</span> no código-fonte.</p>
+            <p>O mesmo vale para o "E comercial" (&): quando eu quero mostrá-lo literalmente, preciso escrever <span class="entidades">&amp;amp;</span>.</p>
+            <p>Repare que a tag <span class="entidades">&lt;code&gt;</span> foi usada aqui porque ela indica que aquele trecho é código — e o navegador já mostra esse texto com uma fonte diferente por padrão, sem eu precisar definir nada com CSS.</p>
+        </div>
+
+    <section>
+        <h2>Elementos Inline x Block</h2>
+        <p>Alguns elementos HTML ficam <strong>na mesma linha</strong> que o conteúdo ao redor (inline); <strong>outros sempre começam em uma linha nova</strong> (block). Compare:</p>
+
+    <div class="inline">
+        <h3>Inline</h3>
+        <table>
+            <tr>
+                <td class="inline palavra-azul"><u>&lt;a&gt;</u></td>
+                <td class="inline"><strong>&lt;strong&gt;</strong></td>
+                <td class="inline"><i>&lt;em&gt;<i></td>
+                <td class="inline bg-amarelo">&lt;mark&gt;</td>
+                <td class="inline entidades">&lt;code&gt;</td>
+                <td class="inline">H<sub>2</sub>O(&lt;sub&gt;)</td>
+                <td class="inline">m<sup>2</sup>(&lt;sup&gt;)</td>
+            </tr>
+        </table>
+        <p><em>Repare: todos os exemplos acima ficam lado a lado, na mesma linha.</em></p>        
+    </div>
+    <div class="block">
+        <h3>Block</h3>
+            <div>
+                <p class="block">&lt;div&gt; — um container genérico. </p>
+            </div>
+            <div>
+                <p class="block">&lt;p&gt; — um parágrafo. </p>
+            </div>
+            <div>
+                <p class="block"><strong>&lt;h1&gt; a &lt;h6&gt; — títulos. </strong></p>
+            </div>
+            <div>
+                <p class="block block-kid">&lt;blockquote&gt; — uma citação. </p>
+            </div>
+            <div>
+                <p class="block">&lt;section&gt; — uma seção (como esta própria página usa)</p>
+            </div>
+        <p><em>Repare:  cada exemplo acima começa em uma linha própria, mesmo sendo um texto curto.</em></p>
+    </div>
+    </section>
+    <footer >
+        <p>Este é um exemplo de rodapé feito com &lt;footer&gt;.</p>
+        <p>© 2026 IFSP Votuporanga — Desenvolvimento Web 1</p>
+    </footer>
+</body>
+</html>
